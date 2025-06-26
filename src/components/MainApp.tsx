@@ -191,6 +191,23 @@ export const MainApp: React.FC<MainAppProps> = ({
           </Card>
         </div>
 
+        {/* Geolocation Error Display */}
+        {locationError && (
+          <Card className="border-red-200 bg-red-50">
+            <CardContent className="pt-6">
+              <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-red-600 mt-0.5" />
+                <div>
+                  <h4 className="font-medium text-red-900">
+                    Ошибка геолокации
+                  </h4>
+                  <p className="text-sm text-red-800 mt-1">{locationError}</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Live Stream */}
