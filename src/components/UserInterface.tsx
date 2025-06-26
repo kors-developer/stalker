@@ -249,9 +249,8 @@ export const UserInterface: React.FC<UserInterfaceProps> = ({
               <button
                 onClick={onAdminAccess}
                 className="text-xs text-gray-400 hover:text-gray-600 transition-colors"
-                style={{ opacity: 0.1 }}
               >
-                •
+                Админ панель
               </button>
             </div>
           </CardContent>
